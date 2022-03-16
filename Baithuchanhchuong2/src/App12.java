@@ -3,7 +3,7 @@ public class App12 {
     public static void main(String[] args) throws Exception {
         int n,m;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap kich thưoc ma tran: ");
+        System.out.println("Nhap kich thuoc ma tran: ");
         n= sc.nextInt();
         m= sc.nextInt();
         int a[][] = new int[n][m];
