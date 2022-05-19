@@ -6,7 +6,7 @@ import java.util.Set;
 public class App113 {
     public static void main(String[] args) {
         int sosv;
-        Map<String,String> manh = new TreeMap<>();
+        Map<String,String> minh = new TreeMap<>();
         try (Scanner m = new Scanner(System.in)) {
             String masv , tensv ;
             String lop;
@@ -23,27 +23,27 @@ public class App113 {
                 tensv = m.nextLine();
                 System.out.print("Nhap lop cua sinh vien do : ");
                 lop = m.nextLine();
-                manh.put(masv, tensv);
+                minh.put(masv, tensv);
             }
         
         //hien thi ds sinh vien 
         System.out.println("Danh sach cac sinh vien vua nhap : ");
         System.out.println("Ma sinh vien\tTen Sinh vien\tLop");
-        Iterator<Map.Entry<String,String>> manhtran = manh.entrySet().iterator();
-        while(manhtran.hasNext())
+        Iterator<Map.Entry<String,String>> congminh = minh.entrySet().iterator();
+        while(congminh.hasNext())
         {
-            //tao 1 entry
-            Map.Entry<String ,String > entry = manhtran.next();
+            //tao 1 entr    y
+            Map.Entry<String ,String > entry = congminh.next();
             System.out.println(entry.getKey() + "\t\t" + entry.getValue());
         }
 
         //lay du lieu tu bang tren
-        Set<Map.Entry<String,String>> manh66 = manh.entrySet();
-        System.out.println(manh66);
+        Set<Map.Entry<String,String>> minh02 = minh.entrySet();
+        System.out.println(minh02);
 
         System.out.println("Nhap ma sinh vien muon tim : ");
         String masvSearch = m.nextLine();
-        System.out.println("Ma sinh vien " + masvSearch + " : " +manh.get(masvSearch));
+        System.out.println("Ma sinh vien " + masvSearch + " : " +minh.get(masvSearch));
     }
     }
 }

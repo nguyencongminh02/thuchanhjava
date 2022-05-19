@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class App110 {
     public static void main(String[] args) {
         //Khai bao 1 LinkedList co ten Manh
-        LinkedList<Integer> Manh = new LinkedList<>();
+        LinkedList<Integer> minh = new LinkedList<>();
 
         //nhap n phan tu , ban phim
         int i,number,n;
@@ -14,19 +14,19 @@ public class App110 {
             {
                 System.out.print("Nhap phan tu thu " + i + " : " );
                 number = m.nextInt();
-                Manh.add(number);
+                minh.add(number);
             }
         }
-        System.out.print("Cac phan tu trong mang Manh la : " +Manh);
+        System.out.print("Cac phan tu trong mang Manh la : " +minh);
 
         //tinh trung binh cong
         int sum = 0, count = 0;
         double tbcong;
         for(i = 0 ; i < n ; i++)
         {
-            if(Manh.get(i) % 2 == 0)
+            if(minh.get(i) % 2 == 0)
             {
-                sum += Manh.get(i);
+                sum += minh.get(i);
                 count++;
             }
         }
